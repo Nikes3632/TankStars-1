@@ -9,9 +9,9 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="605.0" style="-fx-background-color: 00000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tankstars.HelloController">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="423.0" prefWidth="605.0" style="-fx-background-color: 00000000;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.tankstars.SignUp">
    <center>
-      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #19e331;" BorderPane.alignment="CENTER">
          <children>
             <ImageView fitHeight="319.0" fitWidth="314.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -35,8 +35,8 @@
                         <Image url="@../../../../java/img/img_1.png" />
                      </image>
                   </ImageView>
-                  <TextField layoutX="126.0" layoutY="120.0" promptText="username" />
-                  <PasswordField layoutX="126.0" layoutY="266.0" promptText="password" />
+                  <TextField fx:id="username" layoutX="126.0" layoutY="120.0" promptText="username" />
+                  <PasswordField fx:id="password" layoutX="126.0" layoutY="266.0" promptText="password" />
                   <PasswordField layoutX="126.0" layoutY="310.0" promptText="confirm password" />
                   <Label layoutX="-2.0" layoutY="310.0" prefHeight="37.0" prefWidth="120.0" text="Confirm Password" textFill="#d00303">
                      <font>
@@ -58,8 +58,9 @@
                         <Font size="14.0" />
                      </font>
                   </Label>
-                  <TextField layoutX="126.0" layoutY="166.0" promptText="e-mail" />
+                  <TextField fx:id="e_mail" layoutX="126.0" layoutY="166.0" promptText="e-mail" />
                   <PasswordField layoutX="126.0" layoutY="216.0" promptText="+91" />
+                  <Label fx:id="WrongSignUp" layoutX="94.0" layoutY="101.0" prefHeight="17.0" prefWidth="104.0" text="Something_Wrong" textFill="#14098b" />
                </children>
             </AnchorPane>
          </children>
